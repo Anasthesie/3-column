@@ -1,0 +1,106 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 95%);
+}
+main {
+  height: 100vh;
+}
+.card-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 450px;
+  width: 250px;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+.card.orange {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: hsl(31, 77%, 52%);
+}
+.card.orange button {
+  color: hsl(31, 77%, 52%);
+}
+.card.orange button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card.dark-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.card.dark-cyan button {
+  color: hsl(184, 100%, 22%);
+}
+.card.dark-cyan button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+.card.very-dark-cyan {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: hsl(179, 100%, 13%);
+}
+.card.very-dark-cyan button {
+  color: hsl(179, 100%, 13%);
+}
+.card.very-dark-cyan button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+h1 {
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+}
+p {
+  font-size: 15px;
+  line-height: 24px;
+  padding-right: 39px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+button {
+  border: none;
+  width: 150px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 70px;
+  padding: 13px 1px;
+  border-radius: 27px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+@media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  button {
+    margin-bottom: 30px;
+  }
+
+  .card.very-dark-cyan {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 0px;
+  }
+  .card.orange {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+}
